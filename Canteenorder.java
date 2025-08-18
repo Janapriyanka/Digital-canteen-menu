@@ -58,7 +58,7 @@ public class CanteenOrder {
 
             // Generate QR Code for payment
             String upiLink = "upi://pay?pa=9940545485@upi&pn=Canteen&am=" + totalPrice + "&cu=INR";
-            String filePath = "payment_qr.png";
+            String filePath = "c:\\temp\\c.png";
             generateQRCode(upiLink, filePath, 300, 300);
             System.out.println("\nQR Code generated successfully: " + filePath);
             System.out.println("Scan the QR Code to make payment.");
